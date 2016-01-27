@@ -1,0 +1,330 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us - Dceta Studio Team</title>
+
+    <meta name="description" content="Meet the team of professionals that will work on your project.">
+
+    <meta name="keywords" content="web design, web development, web design toronto, website design, responsive web design, graphic design toronto, ux design">
+    <meta name="author" content="Dceta Studio">
+    <meta name="robots" content="index, follow">
+
+    <link rel="shortcut icon" href="{% static 'assets/ico/favicon.png' %}">
+
+    <link href='http://fonts.googleapis.com/css?family=Fira+Sans:400,500,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'assets/css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/font-awesome.min.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link type="text/css" rel="stylesheet" media="all" href="{% static 'assets/css/uc.css' %}" />
+    <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/css/custom.css' %}" rel="stylesheet">
+
+    <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-60676385-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5501b2dc036a85bf" async="async"></script>
+</head>
+
+<body>
+
+<nav class="dceta-navbar navbar navbar-default" style="margin-bottom: 70px"><!--navbar-fixed-top-->
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li> <a href="about" class="smoothScroll" title="About Us">About Us</a></li>
+                <li><a href="#services" class="smoothScroll" title="Services">Services</a></li>
+                <li><a href="#portfolio" class="smoothScroll" title="Portfolio">Portfolio</a></li>
+
+                <li>
+                    <a href="{% url 'index' %}">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="80px" height="40px" viewBox="0 0 80 40" enable-background="new 0 0 80 40" xml:space="preserve">
+                            <polygon opacity="0.25" points="57.232,10.927 63.709,28.63 52.577,31.844 "/>
+                            <polygon opacity="0.25" points="45.169,8.919 56.097,11.008 52.727,14.097 48.9,32.563 47.771,12.67 "/>
+                            <polygon opacity="0.25" points="36.741,30.95 36.741,8.732 44.313,9.14 40.315,15.835 45.865,19.841 40.299,22.499 44.518,31.092 "/>
+                            <polygon opacity="0.25" points="35.586,9.108 30.853,10.201 26.137,20.161 30.202,30.007 34.435,30.487 30.286,19.903 "/>
+                            <polygon opacity="0.25" points="14.825,7.733 25.028,19.284 15.495,31.264 "/>
+                        <!--<path opacity="0.25" d="M79.921,40H0V0h79.921V40z M2.819,37.181h74.282V2.819H2.819V37.181z"/>-->
+                    </svg>
+                    </a>
+                </li>
+
+                <li><a href="#pricing" class="smoothScroll" title="Pricing">Pricing</a></li>
+                <li><a href="#footer" class="smoothScroll" title="Contacts">Contacts</a></li>
+                <li><a href="http://blog.dceta.com/" class="smoothScroll" title="Dceta Studio Blog">Blog</a></li>
+
+
+            </ul>
+
+
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div id="tp"></div>
+<!-- Menu -->
+<!--
+<nav class="menu" id="theMenu">
+    <div class="menu-wrap">
+        <h1 class="logo"><a href="http://dceta.com" class="smoothScroll" title="Dceta Studio">Dceta Studio</a></h1>
+        &lt;!&ndash;<span class="fa fa-arrow-right menu-close"></span>&ndash;&gt;
+        <a href="about" class="smoothScroll" title="About Us">About Us</a>
+        <a href="http://dceta.com#services" class="smoothScroll" title="Services">Services</a>
+        <a href="http://dceta.com#portfolio" class="smoothScroll" title="Portfolio">Portfolio</a>
+        <a href="http://dceta.com#pricing" class="smoothScroll" title="Pricing">Pricing</a>
+        <a href="http://dceta.com#footer" class="smoothScroll" title="Contacts">Contacts</a>
+        <a href="https://www.facebook.com/dcetas" title="Facebook"><span class="fa fa-facebook"></span></a>
+        <a href="https://twitter.com/dcetas" title="Twitter"><span class="fa fa-twitter"></span></a>
+        <a href="https://dribbble.com/dcetas" title="Dribbble"><span class="fa fa-dribbble"></span></a>
+        <a href="https://plus.google.com/+dcetas/about" title="Google+"><span class="fa fa-google-plus"></span></a>
+        <a href="mailto:dceta@email.com" title="Mail"><span class="fa fa-envelope"></span></a>
+    </div>
+
+    &lt;!&ndash; Menu button &ndash;&gt;
+    <div id="menuToggle"><span class="fa fa-bars"></span></div>
+</nav>
+-->
+
+
+<canvas id="ripple"></canvas>
+<div id="ripple-control" style="height:300px"></div>
+
+<div class="underwater">
+    <!-- WELCOME SECTION -->
+    <div class="container">
+        <div class="row mt centered">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>About Us</h2><!-- TODO: Probably should be 36px sized -->
+                <p>Hope you'll find something worth your attention</p>
+            </div>
+        </div><!-- /row -->
+    </div><!-- /.container -->
+
+
+    <!-- TEAM INTRODUCTION -->
+	<div class="container">
+
+		<div class="row">
+			<div class="col-lg-8">
+                <span class="sm-title">Some story</span>
+				<p>We are a full-cycle Web Agency located in Toronto, Ontario. Our story started at the beginning of 2014 when we found out that we could do some pretty cool things together. Since that time we've been working together on the freelance projects while finishing our university degrees.  Now we are "worthy members of society" and we are ready to finally work for ourselves.</p>
+				<!--<p>Well, you might think that there are only two people working for DCETA. It's not right, from our previous work experience we have a wide network of professionals in different fields who are ready to start work with us on the permanent basis. Currently they are working part-time for us, continuing to work for other agencies.</p>-->
+			</div>
+			<div class="col-lg-3 col-lg-offset-1">
+				<span class="sm-title">Meet The Team</span>
+				<p class="tm">In the blocks beyond you can see the links for our social profiles, feel free to explore and to connect, we are always happy to meet new people.</p>
+				<!--<p class="tm"><a href="#"><span class="fa fa-link"></span> <b>Download PDF</b></a></p>-->
+			</div>
+		</div>
+		
+	</div><!-- container -->
+	
+	<!-- TEAM MEMBERS -->
+	<div class="container" style="max-width: 900px; margin-bottom: 80px;">
+		<div class="row mt centered">
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-delay="0.4s" data-wow-duration="1s">
+				<img style="max-width: 300px" src="{% static 'assets/img/team/vlad.png' %}" alt="Vlad Akimenko">
+				<div class="cardinfo">
+					<h4>VLAD AKIMENKO</h4>
+					<h6>ENTHUSIAST</h6>
+                    <p>I'm always passionate about what I'm doing. Design and programming have been my hobbies ever since junior high. I've got 5 years of freelancing and studio work experience as a Web Designer/Developer & Visual Designer under my belt.</p>
+					<p style="text-align:right;"><a href="https://www.facebook.com/profile.php?id=100004447367715" title="Vlad Akimenko on Facebook"><span class="fa fa-facebook"></span></a><a href="https://twitter.com/vakmnko" title="Vlad Akimenko on Twitter"><span class="fa fa-twitter"></span></a><a href="mailto:akmnko@gmail.com" title="Email to Vlad Akimenko"><span class="fa fa-envelope"></span></a></p>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow fadeInRight" data-wow-delay="0.4s" data-wow-duration="1s">
+				<img style="max-width: 300px" src="{% static 'assets/img/team/den.png' %}" alt="Denys Boiko">
+				<div class="cardinfo">
+					<h4>DENYS BOIKO</h4>
+					<h6>PERFECTIONIST</h6>
+					<p>I'm very critical what we do at DCETA so that only the best solutions are delivered to our clients. I'm passionate about design, typography, and beautiful coding. I've worked as a Freelance Web Designer/Developer for about 4 years.</p>
+					<p style="text-align:right;"><a href="https://www.facebook.com/denys.bojko" title="Denys Boiko on Facebook"><span class="fa fa-facebook"></span></a><a href="https://twitter.com/denysboiko" title="Denys Boiko on Twitter"><span class="fa fa-twitter"></span></a><a href="mailto:denys.boiko@gmail.com" title="Email to Denys Boiko"><span class="fa fa-envelope"></span></a></p>
+				</div>
+			</div>
+		</div><!-- row -->
+	</div><!-- container -->
+
+
+
+
+    <div id="call" class="img-holder" data-image="assets/img/dividers/7.jpg">
+
+        <div class="bg_call">
+            <div class="container">
+                <div class="row centered" style="-webkit-transform: translateZ(1px); -moz-transform: translateZ(1px); margin-top: 60px;">
+                    <!-- class="wow fadeIn" data-wow-duration="1s"  data-wow-delay="0.5s"-->
+                    <h4 class="centered" style="text-transform:uppercase;">Ready to start?</h4>
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <p>Ready to start a project? Feeling curious about how this works? Let’s talk about your idea. Because we like to always come prepared, please fill out our project inquiry form. Be as specific as possible.</p>
+                        <button type="button" id="quote" class="btn btn-green btn-lg blue-btn quote" data-toggle="modal" data-target="#order">Get a Free Quote</button>
+                    </div>
+                </div><!-- row -->
+            </div><!-- container -->
+        </div>
+    </div><!-- Call to action -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="order" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel1">Just send it, the response will be quick</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="send-form">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="name1">Name</label>
+                                    <input id="name1" name="name" type="text" class="form-control" placeholder="Enter name" required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="email1">Email Address</label>
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+                                        <input id="email1" name="email" type="email" class="form-control" placeholder="Enter email" required="required" /></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject1">Service</label>
+                                    <select id="subject1" name="subject" class="form-control" required="required">
+                                        <option value="" selected="">Choose only one at a time, please!</option>
+                                        <option value="Web Development">Web Development</option>
+                                        <option value="UI/UX">UI/UX</option>
+                                        <option value="Graphic Design">Graphic Design</option>
+                                        <option value="Branding">Branding</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="message1">Message</label>
+                                    <textarea id="message1" name="message" class="form-control" rows="9" cols="25" required="required" placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <button type="submit" class="btn btn-primary pull-right blue-btn send" id="btnContactUs1">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row mt">
+                <div class="col-lg-6">
+                    <h4>Contact Information</h4>
+                </div>
+            </div><!-- row -->
+            <div class="row">
+                <div class="col-lg-9 col-md-9 col-xs-12">
+                    <p>We work remotely, mostly underwater, but sometimes we surface for fresh oxygen, so you can schedule a meeting with us in Toronto or contact us any way you like:</p>
+                    <div class="contact">
+                        <span class="fa fa-phone fa-lg"></span><span>+1 (416) 879-4514</span><br>
+                        <span class="fa fa-envelope-o fa-lg"></span> <a href="mailto:dceta@email.com" title="Email">dceta@email.com</a>
+                    </div><!--contact-->
+                </div><!--col-lg-6-->
+                <div class="social-block col-lg-3 col-md-3 col-xs-12">
+                    <h5>Let's Get Social</h5>
+                    <div class="social wow pulse" data-wow-duration="1s"  data-wow-delay="0.5s">
+                        <a href="https://www.facebook.com/dcetas"><img src="{% static 'assets/img/social/fb.png' %}" alt="Facebook"></a>
+                        <a href="https://twitter.com/dcetas"><img src="{% static 'assets/img/social/twt.png' %}" alt="Twitter"></a>
+                        <a href="https://plus.google.com/+dcetas/about"><img src="{% static 'assets/img/social/ggl.png' %}" alt="Google+"></a>
+                        <a href="https://www.behance.net/dcetas"><img src="{% static 'assets/img/social/bhnc.png' %}" alt="Behance"></a>
+                        <a href="https://dribbble.com/dcetas"><img src="{% static 'assets/img/social/drbbl.png' %}" alt="Dribbble"></a>
+                    </div>
+                    <p style="text-align: center">© 2015 Dceta Studio</p>
+                </div>
+            </div><!-- row -->
+            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <div class="addthis_native_toolbox" style="margin-bottom: 25px;"></div>
+        </div><!-- container -->
+
+    </footer>
+</div><!-- Underwater -->
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script src="{% static 'assets/js/wow.min.js' %}"></script>
+<script>
+    new WOW().init();
+</script>
+<script src="{% static 'assets/js/modernizr.custom.js' %}"></script>
+<script src="{% static 'assets/js/ripple.js' %}"></script>
+<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'assets/js/smoothscroll.js' %}"></script>
+<script src="{% static 'assets/js/main.js' %}"></script>
+<script src="{% static 'assets/js/masonry.pkgd.min.js' %}"></script>
+<script src="{% static 'assets/js/imagesloaded.js' %}"></script>
+<script src="{% static 'assets/js/classie.js' %}"></script>
+<!--<script src="assets/js/AnimOnScroll.js"></script>-->
+<script src="{% static 'assets/js/jquery.imageScroll.min.js' %}"></script>
+<script>
+    var touch = Modernizr.touch;
+    $('.img-holder').imageScroll({
+        imageAttribute: (touch === true) ? 'image-mobile' : 'image',
+        touch: touch,
+        holderMaxHeight:350,
+        speed: 0.6,
+        parallax: true
+    });
+</script>
+
+<script>
+
+    var downloadLink = document.getElementById('quote');
+    addListener(downloadLink, 'click', function() {
+        ga('send', 'event', 'button', 'click', 'quote');
+    });
+
+
+    function addListener(element, type, callback) {
+        if (element.addEventListener) element.addEventListener(type, callback);
+        else if (element.attachEvent) element.attachEvent('on' + type, callback);
+    }
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+{% load staticfiles %}
+<link href="{% static 'polls/bootstrap/css/bootstrap.css' %}" rel="stylesheet">
+<div class="container">
+    <div class="container-fluid">
+        <h1>{{ question.question_text }}</h1>
+
+        <ul>
+        {% for choice in question.choice_set.all %}
+            <li>{{ choice.choice_text }} <span class="badge">{{ choice.votes }} vote{{ choice.votes|pluralize }}</span></li>
+        {% endfor %}
+        </ul>
+
+        <a href="{% url 'polls:detail' question.id %}">Vote again?</a>
+
+    </div>
+</div>
+
+
+import datetime
+from django.utils import timezone
+from polls.models import Question
+
+future_question = Question(pub_date=timezone.now() + datetime.timedelta(days=30))
+
+future_question.was_published_recently()
