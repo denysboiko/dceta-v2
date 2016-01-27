@@ -20,10 +20,18 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     url(r'^$', include('poll.urls')), # namespace='polls'
+    url(r'^about/',  'poll.views.about', name='about'),
+    url(r'^services/',  'poll.views.blank', name='services'),
+    url(r'^work/',  'poll.views.blank', name='work'),
+    url(r'^prices/',  'poll.views.blank', name='prices'),
+    url(r'^contact/',  'poll.views.blank', name='contact'),
+
+    url(r'^admin/', include(admin.site.urls)),
+
+
     # url(r'^$', 'poll.views.cover_me', name='index'),
     url(r'^polls/', include('poll.urls', namespace="polls")),
     url(r'^upload/', include('poll.urls', namespace="polls")),
-    url(r'^about/',  'poll.views.about', name='about'),
     url(r'^legal/', include('poll.urls', namespace="polls")),
-    url(r'^admin/', include(admin.site.urls)),
+
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

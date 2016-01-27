@@ -1,0 +1,210 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us - Dceta Studio Team</title>
+
+    <meta name="description" content="Meet the team of professionals that will work on your project.">
+
+    <meta name="keywords" content="web design, web development, web design toronto, website design, responsive web design, graphic design toronto, ux design">
+    <meta name="author" content="Dceta Studio">
+    <meta name="robots" content="index, follow">
+
+    <link rel="shortcut icon" href="{% static 'ico/favicon.png' %}">
+
+    <link href='http://fonts.googleapis.com/css?family=Fira+Sans:400,500,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'css/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link type="text/css" rel="stylesheet" media="all" href="{% static 'css/uc.css' %}" />
+    <link href="{% static 'css/main.css' %}" rel="stylesheet">
+    <link href="{% static 'css/custom.css' %}" rel="stylesheet">
+
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-60676385-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5501b2dc036a85bf" async="async"></script>
+</head>
+
+<body>
+
+<nav class="dceta-navbar navbar navbar-default" style="margin-bottom: 70px"><!--navbar-fixed-top-->
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li> <a href="{% url 'about' %}" class="smoothScroll" title="About Us">About Us</a></li>
+                <li><a href="{% url 'services' %}" class="smoothScroll" title="Services">Services</a></li>
+                <li><a href="{% url 'work' %}" class="smoothScroll" title="Portfolio">Portfolio</a></li>
+
+                <li>
+                    <a href="{% url 'index' %}">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="80px" height="40px" viewBox="0 0 80 40" enable-background="new 0 0 80 40" xml:space="preserve">
+                            <polygon opacity="0.25" points="57.232,10.927 63.709,28.63 52.577,31.844 "/>
+                            <polygon opacity="0.25" points="45.169,8.919 56.097,11.008 52.727,14.097 48.9,32.563 47.771,12.67 "/>
+                            <polygon opacity="0.25" points="36.741,30.95 36.741,8.732 44.313,9.14 40.315,15.835 45.865,19.841 40.299,22.499 44.518,31.092 "/>
+                            <polygon opacity="0.25" points="35.586,9.108 30.853,10.201 26.137,20.161 30.202,30.007 34.435,30.487 30.286,19.903 "/>
+                            <polygon opacity="0.25" points="14.825,7.733 25.028,19.284 15.495,31.264 "/>
+                        <!--<path opacity="0.25" d="M79.921,40H0V0h79.921V40z M2.819,37.181h74.282V2.819H2.819V37.181z"/>-->
+                    </svg>
+                    </a>
+                </li>
+
+                <li><a href="{% url 'prices' %}" class="smoothScroll" title="Pricing">Pricing</a></li>
+                <li><a href="{% url 'contact' %}" class="smoothScroll" title="Contacts">Contacts</a></li>
+                <li><a href="http://blog.dceta.com/" class="smoothScroll" title="Dceta Studio Blog">Blog</a></li>
+
+
+            </ul>
+
+
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div id="tp"></div>
+<!-- Menu -->
+<!--
+<nav class="menu" id="theMenu">
+    <div class="menu-wrap">
+        <h1 class="logo"><a href="http://dceta.com" class="smoothScroll" title="Dceta Studio">Dceta Studio</a></h1>
+        &lt;!&ndash;<span class="fa fa-arrow-right menu-close"></span>&ndash;&gt;
+        <a href="about" class="smoothScroll" title="About Us">About Us</a>
+        <a href="http://dceta.com#services" class="smoothScroll" title="Services">Services</a>
+        <a href="http://dceta.com#portfolio" class="smoothScroll" title="Portfolio">Portfolio</a>
+        <a href="http://dceta.com#pricing" class="smoothScroll" title="Pricing">Pricing</a>
+        <a href="http://dceta.com#footer" class="smoothScroll" title="Contacts">Contacts</a>
+        <a href="https://www.facebook.com/dcetas" title="Facebook"><span class="fa fa-facebook"></span></a>
+        <a href="https://twitter.com/dcetas" title="Twitter"><span class="fa fa-twitter"></span></a>
+        <a href="https://dribbble.com/dcetas" title="Dribbble"><span class="fa fa-dribbble"></span></a>
+        <a href="https://plus.google.com/+dcetas/about" title="Google+"><span class="fa fa-google-plus"></span></a>
+        <a href="mailto:dceta@email.com" title="Mail"><span class="fa fa-envelope"></span></a>
+    </div>
+
+    &lt;!&ndash; Menu button &ndash;&gt;
+    <div id="menuToggle"><span class="fa fa-bars"></span></div>
+</nav>
+-->
+
+
+<canvas id="ripple"></canvas>
+<div id="ripple-control" style="height:300px"></div>
+
+<div class="underwater">
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row mt">
+                <div class="col-lg-6">
+                    <h4>Contact Information</h4>
+                </div>
+            </div><!-- row -->
+            <div class="row">
+                <div class="col-lg-9 col-md-9 col-xs-12">
+                    <p>We work remotely, mostly underwater, but sometimes we surface for fresh oxygen, so you can schedule a meeting with us in Toronto or contact us any way you like:</p>
+                    <div class="contact">
+                        <span class="fa fa-phone fa-lg"></span><span>+1 (416) 879-4514</span><br>
+                        <span class="fa fa-envelope-o fa-lg"></span> <a href="mailto:dceta@email.com" title="Email">dceta@email.com</a>
+                    </div><!--contact-->
+                </div><!--col-lg-6-->
+                <div class="social-block col-lg-3 col-md-3 col-xs-12">
+                    <h5>Let's Get Social</h5>
+                    <div class="social wow pulse" data-wow-duration="1s"  data-wow-delay="0.5s">
+                        <a href="https://www.facebook.com/dcetas"><img src="{% static 'img/social/fb.png' %}" alt="Facebook"></a>
+                        <a href="https://twitter.com/dcetas"><img src="{% static 'img/social/twt.png' %}" alt="Twitter"></a>
+                        <a href="https://plus.google.com/+dcetas/about"><img src="{% static 'img/social/ggl.png' %}" alt="Google+"></a>
+                        <a href="https://www.behance.net/dcetas"><img src="{% static 'img/social/bhnc.png' %}" alt="Behance"></a>
+                        <a href="https://dribbble.com/dcetas"><img src="{% static 'img/social/drbbl.png' %}" alt="Dribbble"></a>
+                    </div>
+                    <p style="text-align: center">© 2015 Dceta Studio</p>
+                </div>
+            </div><!-- row -->
+            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <div class="addthis_native_toolbox" style="margin-bottom: 25px;"></div>
+        </div><!-- container -->
+
+    </footer>
+</div><!-- Underwater -->
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script src="{% static 'js/wow.min.js' %}"></script>
+<script>
+    new WOW().init();
+</script>
+<script src="{% static 'js/modernizr.custom.js' %}"></script>
+<script src="{% static 'js/ripple.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/smoothscroll.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+<script src="{% static 'js/masonry.pkgd.min.js' %}"></script>
+<script src="{% static 'js/imagesloaded.js' %}"></script>
+<script src="{% static 'js/classie.js' %}"></script>
+<!--<script src="js/AnimOnScroll.js"></script>-->
+<script src="{% static 'js/jquery.imageScroll.min.js' %}"></script>
+<script>
+    var touch = Modernizr.touch;
+    $('.img-holder').imageScroll({
+        imageAttribute: (touch === true) ? 'image-mobile' : 'image',
+        touch: touch,
+        holderMaxHeight:350,
+        speed: 0.6,
+        parallax: true
+    });
+</script>
+
+<script>
+
+    var downloadLink = document.getElementById('quote');
+    addListener(downloadLink, 'click', function() {
+        ga('send', 'event', 'button', 'click', 'quote');
+    });
+
+
+    function addListener(element, type, callback) {
+        if (element.addEventListener) element.addEventListener(type, callback);
+        else if (element.attachEvent) element.attachEvent('on' + type, callback);
+    }
+
+</script>
+
+</body>
+</html>

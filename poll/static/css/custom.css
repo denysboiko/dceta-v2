@@ -341,6 +341,7 @@ body {
 .underwater {
     /*background:linear-gradient(to bottom, #007299 10%, #004b65 50%, #001f2e 90%);*/
     background:linear-gradient(to bottom, #0997fe 10%, #0160a4 40%, #002743 80%, #001b2f 90%);
+    MIN-HEIGHT: 800px
 }
 
 .carousel-inner .item {

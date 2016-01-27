@@ -1,0 +1,57 @@
+<nav class="dceta-navbar navbar navbar-default"><!--navbar-fixed-top-->
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li> <a href="{% url 'about' %}" class="smoothScroll" title="About Us">About Us</a></li>
+                <li><a href="{% url 'services' %}" class="smoothScroll" title="Services">Services</a></li>
+                <li><a href="{% url 'work' %}" class="smoothScroll" title="Portfolio">Portfolio</a></li>
+
+                <li>
+                    {% if request.path == "/" %}
+                        <div style="padding: 15px">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="80px" height="40px" viewBox="0 0 80 40" enable-background="new 0 0 80 40" xml:space="preserve">
+                                <polygon opacity="0.25" points="57.232,10.927 63.709,28.63 52.577,31.844 "/>
+                                <polygon opacity="0.25" points="45.169,8.919 56.097,11.008 52.727,14.097 48.9,32.563 47.771,12.67 "/>
+                                <polygon opacity="0.25" points="36.741,30.95 36.741,8.732 44.313,9.14 40.315,15.835 45.865,19.841 40.299,22.499 44.518,31.092 "/>
+                                <polygon opacity="0.25" points="35.586,9.108 30.853,10.201 26.137,20.161 30.202,30.007 34.435,30.487 30.286,19.903 "/>
+                                <polygon opacity="0.25" points="14.825,7.733 25.028,19.284 15.495,31.264 "/>
+                            <!--<path opacity="0.25" d="M79.921,40H0V0h79.921V40z M2.819,37.181h74.282V2.819H2.819V37.181z"/>-->
+                        </svg>
+                        </div>
+                        {% else %}
+                        <a href="{% url 'index' %}">
+                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="80px" height="40px" viewBox="0 0 80 40" enable-background="new 0 0 80 40" xml:space="preserve">
+                                    <polygon opacity="0.25" points="57.232,10.927 63.709,28.63 52.577,31.844 "/>
+                                    <polygon opacity="0.25" points="45.169,8.919 56.097,11.008 52.727,14.097 48.9,32.563 47.771,12.67 "/>
+                                    <polygon opacity="0.25" points="36.741,30.95 36.741,8.732 44.313,9.14 40.315,15.835 45.865,19.841 40.299,22.499 44.518,31.092 "/>
+                                    <polygon opacity="0.25" points="35.586,9.108 30.853,10.201 26.137,20.161 30.202,30.007 34.435,30.487 30.286,19.903 "/>
+                                    <polygon opacity="0.25" points="14.825,7.733 25.028,19.284 15.495,31.264 "/>
+                                <!--<path opacity="0.25" d="M79.921,40H0V0h79.921V40z M2.819,37.181h74.282V2.819H2.819V37.181z"/>-->
+                            </svg>
+                        </a>
+                    {% endif %}
+                </li>
+
+                <li><a href="{% url 'prices' %}" class="smoothScroll" title="Pricing">Pricing</a></li>
+                <li><a href="{% url 'contact' %}" class="smoothScroll" title="Contacts">Contacts</a></li>
+                <li><a href="http://blog.dceta.com/" class="smoothScroll" title="Dceta Studio Blog">Blog</a></li>
+
+
+            </ul>
+
+
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>

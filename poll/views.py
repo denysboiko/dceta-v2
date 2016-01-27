@@ -87,3 +87,6 @@ def cover_me(request):
 
 def about(request):
     return render(request, 'dceta/about.html')
+
+def blank(request):
+    return render(request, 'dceta/blank.html')
