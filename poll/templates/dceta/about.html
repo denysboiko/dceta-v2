@@ -15,7 +15,7 @@
     <meta name="author" content="Dceta Studio">
     <meta name="robots" content="index, follow">
 
-    <link rel="shortcut icon" href="{% static 'assets/ico/favicon.png' %}">
+    <link rel="shortcut icon" href="{% static 'ico/favicon.png' %}">
 
     <link href='http://fonts.googleapis.com/css?family=Fira+Sans:400,500,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
@@ -23,21 +23,21 @@
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-    <script src="assets/js/html5shiv.js"></script>
-    <script src="assets/js/respond.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
     <![endif]-->
 
     <!-- Bootstrap core CSS -->
-    <link href="{% static 'assets/css/bootstrap.css' %}" rel="stylesheet">
-    <link href="{% static 'assets/css/animate.min.css' %}" rel="stylesheet">
-    <link href="{% static 'assets/css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'css/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link type="text/css" rel="stylesheet" media="all" href="{% static 'assets/css/uc.css' %}" />
-    <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
-    <link href="{% static 'assets/css/custom.css' %}" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" media="all" href="{% static 'css/uc.css' %}" />
+    <link href="{% static 'css/main.css' %}" rel="stylesheet">
+    <link href="{% static 'css/custom.css' %}" rel="stylesheet">
 
-    <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -69,7 +69,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li> <a href="about" class="smoothScroll" title="About Us">About Us</a></li>
+                <li> <a href="{% url 'about' %}" class="smoothScroll" title="About Us">About Us</a></li>
                 <li><a href="#services" class="smoothScroll" title="Services">Services</a></li>
                 <li><a href="#portfolio" class="smoothScroll" title="Portfolio">Portfolio</a></li>
 
@@ -160,7 +160,7 @@
 	<div class="container" style="max-width: 900px; margin-bottom: 80px;">
 		<div class="row mt centered">
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-delay="0.4s" data-wow-duration="1s">
-				<img style="max-width: 300px" src="{% static 'assets/img/team/vlad.png' %}" alt="Vlad Akimenko">
+				<img style="max-width: 300px" src="{% static 'img/team/vlad.png' %}" alt="Vlad Akimenko">
 				<div class="cardinfo">
 					<h4>VLAD AKIMENKO</h4>
 					<h6>ENTHUSIAST</h6>
@@ -169,7 +169,7 @@
 				</div>
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow fadeInRight" data-wow-delay="0.4s" data-wow-duration="1s">
-				<img style="max-width: 300px" src="{% static 'assets/img/team/den.png' %}" alt="Denys Boiko">
+				<img style="max-width: 300px" src="{% static 'img/team/den.png' %}" alt="Denys Boiko">
 				<div class="cardinfo">
 					<h4>DENYS BOIKO</h4>
 					<h6>PERFECTIONIST</h6>
@@ -183,7 +183,7 @@
 
 
 
-    <div id="call" class="img-holder" data-image="assets/img/dividers/7.jpg">
+    <div id="call" class="img-holder" data-image="img/dividers/7.jpg">
 
         <div class="bg_call">
             <div class="container">
@@ -266,11 +266,11 @@
                 <div class="social-block col-lg-3 col-md-3 col-xs-12">
                     <h5>Let's Get Social</h5>
                     <div class="social wow pulse" data-wow-duration="1s"  data-wow-delay="0.5s">
-                        <a href="https://www.facebook.com/dcetas"><img src="{% static 'assets/img/social/fb.png' %}" alt="Facebook"></a>
-                        <a href="https://twitter.com/dcetas"><img src="{% static 'assets/img/social/twt.png' %}" alt="Twitter"></a>
-                        <a href="https://plus.google.com/+dcetas/about"><img src="{% static 'assets/img/social/ggl.png' %}" alt="Google+"></a>
-                        <a href="https://www.behance.net/dcetas"><img src="{% static 'assets/img/social/bhnc.png' %}" alt="Behance"></a>
-                        <a href="https://dribbble.com/dcetas"><img src="{% static 'assets/img/social/drbbl.png' %}" alt="Dribbble"></a>
+                        <a href="https://www.facebook.com/dcetas"><img src="{% static 'img/social/fb.png' %}" alt="Facebook"></a>
+                        <a href="https://twitter.com/dcetas"><img src="{% static 'img/social/twt.png' %}" alt="Twitter"></a>
+                        <a href="https://plus.google.com/+dcetas/about"><img src="{% static 'img/social/ggl.png' %}" alt="Google+"></a>
+                        <a href="https://www.behance.net/dcetas"><img src="{% static 'img/social/bhnc.png' %}" alt="Behance"></a>
+                        <a href="https://dribbble.com/dcetas"><img src="{% static 'img/social/drbbl.png' %}" alt="Dribbble"></a>
                     </div>
                     <p style="text-align: center">© 2015 Dceta Studio</p>
                 </div>
@@ -286,20 +286,20 @@
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 
-<script src="{% static 'assets/js/wow.min.js' %}"></script>
+<script src="{% static 'js/wow.min.js' %}"></script>
 <script>
     new WOW().init();
 </script>
-<script src="{% static 'assets/js/modernizr.custom.js' %}"></script>
-<script src="{% static 'assets/js/ripple.js' %}"></script>
-<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
-<script src="{% static 'assets/js/smoothscroll.js' %}"></script>
-<script src="{% static 'assets/js/main.js' %}"></script>
-<script src="{% static 'assets/js/masonry.pkgd.min.js' %}"></script>
-<script src="{% static 'assets/js/imagesloaded.js' %}"></script>
-<script src="{% static 'assets/js/classie.js' %}"></script>
-<!--<script src="assets/js/AnimOnScroll.js"></script>-->
-<script src="{% static 'assets/js/jquery.imageScroll.min.js' %}"></script>
+<script src="{% static 'js/modernizr.custom.js' %}"></script>
+<script src="{% static 'js/ripple.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/smoothscroll.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+<script src="{% static 'js/masonry.pkgd.min.js' %}"></script>
+<script src="{% static 'js/imagesloaded.js' %}"></script>
+<script src="{% static 'js/classie.js' %}"></script>
+<!--<script src="js/AnimOnScroll.js"></script>-->
+<script src="{% static 'js/jquery.imageScroll.min.js' %}"></script>
 <script>
     var touch = Modernizr.touch;
     $('.img-holder').imageScroll({

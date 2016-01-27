@@ -19,11 +19,11 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    # url(r'^', include('poll.urls', namespace="polls")),
-    url(r'^$', 'poll.views.cover_me', name='index'),
+    url(r'^$', include('poll.urls')), # namespace='polls'
+    # url(r'^$', 'poll.views.cover_me', name='index'),
     url(r'^polls/', include('poll.urls', namespace="polls")),
     url(r'^upload/', include('poll.urls', namespace="polls")),
-    url(r'^about/',  'poll.views.about'),
+    url(r'^about/',  'poll.views.about', name='about'),
     url(r'^legal/', include('poll.urls', namespace="polls")),
     url(r'^admin/', include(admin.site.urls)),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
